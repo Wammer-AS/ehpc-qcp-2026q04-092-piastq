@@ -1,0 +1,4324 @@
+{
+  "meta": {
+    "timestamp_utc": "2026-11-27T19:28:16.490939+00:00",
+    "hostname": "redacted",
+    "python": "3.11.0",
+    "platform": "Linux-5.14.0-427.28.1.el9_4.x86_64-x86_64-with-glibc2.34",
+    "cpu_count": 128,
+    "slurm_job_id": "2118",
+    "slurm_nodelist": "redacted",
+    "packages": {
+      "qiskit": "2.4.1",
+      "qiskit-aqt-provider": "2.0.1",
+      "qiskit-aer": "0.18.4",
+      "aqt-connector": "0.7.0",
+      "ortools": "9.15.6755",
+      "z3-solver": "5.4.1.0",
+      "dwave-neal": "0.6.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "elapsed_seconds": 1890.9639481510967,
+  "instances": [
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 0,
+      "seed": 20281800,
+      "input_sha256": "21ed3adeddcd23e299d770e8c42f5d9ab6be2bf51054901a06de1379aee5fe70",
+      "exact_energy": -17,
+      "exact_index": 8705,
+      "exact_seconds": 1.6529249716550112,
+      "cpsat_natural_seconds": 0.0067283995449543,
+      "cpsat_qubo_seconds": 0.007395273074507713,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 8705,
+        "selected_energy": -17,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.797,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.358,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.042620088905096054
+      },
+      "dwave_neal": {
+        "selected_index": 8705,
+        "selected_energy": -17,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -11.33,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.093,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02264470048248768
+      },
+      "uniform_random": {
+        "selected_index": 557080,
+        "selected_energy": 276,
+        "objective_gap": 293,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3205.441,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.102723111621009
+            ],
+            "betas": [
+              2.4132549229544065
+            ],
+            "phase_energy_scale": 12937.0,
+            "exact_expected_energy": 1772.5412548501674,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 39
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524290,
+            "selected_energy": -12,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1804.138,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7058823529411765,
+            "seconds": 0.8686449658125639
+          },
+          "noisy_qaoa": {
+            "selected_index": 557072,
+            "selected_energy": -11,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1911.716,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6470588235294118,
+            "seconds": 419.4231267403811
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.959713833992779,
+              5.514223205363287
+            ],
+            "betas": [
+              2.6681399749998493,
+              2.7989238469120115
+            ],
+            "phase_energy_scale": 12937.0,
+            "exact_expected_energy": 1345.7087954653684,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 60
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 270340,
+            "selected_energy": -14,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1361.095,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8235294117647058,
+            "seconds": 3.6051622480154037
+          },
+          "noisy_qaoa": {
+            "selected_index": 786448,
+            "selected_energy": -16,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1684.268,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.9411764705882353,
+            "seconds": 719.7689557764679
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.7132846931346055,
+              4.461115322543608,
+              3.3563302993973716
+            ],
+            "betas": [
+              2.818838581167021,
+              0.4694327668612709,
+              1.6684040322527052
+            ],
+            "phase_energy_scale": 12937.0,
+            "exact_expected_energy": 1562.645809327027,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 82
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 8193,
+            "selected_energy": -10,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1582.918,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5882352941176471,
+            "seconds": 5.7445778995752335
+          },
+          "noisy_qaoa": {
+            "selected_index": 524320,
+            "selected_energy": -10,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2017.479,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5882352941176471,
+            "seconds": 653.5065017826855
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 1,
+      "seed": 20281801,
+      "input_sha256": "74d9c8754153a544c1e8d34d02bdccf93d83902042e9f6ddad0224065845ede7",
+      "exact_energy": -25,
+      "exact_index": 40977,
+      "exact_seconds": 2.2728965636342764,
+      "cpsat_natural_seconds": 0.006937740370631218,
+      "cpsat_qubo_seconds": 0.00787593238055706,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 40977,
+        "selected_energy": -25,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -19.051,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.317,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04711670055985451
+      },
+      "dwave_neal": {
+        "selected_index": 40977,
+        "selected_energy": -25,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -13.737,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.052,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02622309699654579
+      },
+      "uniform_random": {
+        "selected_index": 135168,
+        "selected_energy": -8,
+        "objective_gap": 17,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 3111.5,
+        "valid_fraction": 0.001,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.32
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.549508648885655
+            ],
+            "betas": [
+              2.7636460747827765
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 1976.8861352359916,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 36
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 139296,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2023.228,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64,
+            "seconds": 0.8962269593030214
+          },
+          "noisy_qaoa": {
+            "selected_index": 49168,
+            "selected_energy": 77,
+            "objective_gap": 102,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2125.227,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 419.61139640398324
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.239012541264671,
+              2.2670673227785283
+            ],
+            "betas": [
+              0.41493903215458106,
+              2.373161322804157
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 1464.7111309808945,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 56
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 139296,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1416.453,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64,
+            "seconds": 3.4656878001987934
+          },
+          "noisy_qaoa": {
+            "selected_index": 720896,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1795.639,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72,
+            "seconds": 716.2044559810311
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.5210720794405175,
+              3.765685420567269,
+              2.355906572227936
+            ],
+            "betas": [
+              3.0201573316234662,
+              1.0033808225299548,
+              1.6827246743867919
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 1003.251634710484,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 77
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 196608,
+            "selected_energy": -14,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1032.996,
+            "valid_fraction": 0.021,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.56,
+            "seconds": 5.792263174429536
+          },
+          "noisy_qaoa": {
+            "selected_index": 294912,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1557.366,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4,
+            "seconds": 675.8529275488108
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 2,
+      "seed": 20281802,
+      "input_sha256": "8262d66c1242d8604fe12137a2b1060636a93171bad679dc1e1684a10f5e8d24",
+      "exact_energy": -22,
+      "exact_index": 6146,
+      "exact_seconds": 2.5532060358673334,
+      "cpsat_natural_seconds": 0.008899616077542305,
+      "cpsat_qubo_seconds": 0.008556568995118141,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 6146,
+        "selected_energy": -22,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -19.491,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.339,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04408558830618858
+      },
+      "dwave_neal": {
+        "selected_index": 6146,
+        "selected_energy": -22,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.206,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.065,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025844890624284744
+      },
+      "uniform_random": {
+        "selected_index": 622596,
+        "selected_energy": 184,
+        "objective_gap": 206,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3444.83,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.4155534183494156
+            ],
+            "betas": [
+              2.116352470190445
+            ],
+            "phase_energy_scale": 13729.0,
+            "exact_expected_energy": 2465.9214628440595,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 40
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 18,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2495.398,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.18181818181818182,
+            "seconds": 0.9560285992920399
+          },
+          "noisy_qaoa": {
+            "selected_index": 40961,
+            "selected_energy": -18,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2608.993,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8181818181818182,
+            "seconds": 421.5948682576418
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.987432710848988,
+              0.028364364007484585
+            ],
+            "betas": [
+              0.40893828908503166,
+              1.813038023248759
+            ],
+            "phase_energy_scale": 13729.0,
+            "exact_expected_energy": 1748.8645013732087,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 62
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 133120,
+            "selected_energy": -12,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1734.357,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5454545454545454,
+            "seconds": 3.4123297724872828
+          },
+          "noisy_qaoa": {
+            "selected_index": 278784,
+            "selected_energy": -10,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2101.793,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.45454545454545453,
+            "seconds": 703.1581723801792
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.5892608869997895,
+              6.077338524729566,
+              2.5853926851902527
+            ],
+            "betas": [
+              0.3236116837683492,
+              0.9846616262252159,
+              1.6678416031186127
+            ],
+            "phase_energy_scale": 13729.0,
+            "exact_expected_energy": 1187.1567418809673,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 84
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 131204,
+            "selected_energy": -14,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1167.202,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6363636363636364,
+            "seconds": 5.618859412148595
+          },
+          "noisy_qaoa": {
+            "selected_index": 32772,
+            "selected_energy": -10,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1801.699,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.45454545454545453,
+            "seconds": 677.1483152601868
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 3,
+      "seed": 20281803,
+      "input_sha256": "3df2e8ef034363e4f586fe0edf831482180ce97649b9a873634683ba41283cc1",
+      "exact_energy": -23,
+      "exact_index": 147584,
+      "exact_seconds": 2.3583005722612143,
+      "cpsat_natural_seconds": 0.00842282921075821,
+      "cpsat_qubo_seconds": 0.010472496971487999,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 147584,
+        "selected_energy": -23,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -19.833,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.259,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.047659093514084816
+      },
+      "dwave_neal": {
+        "selected_index": 147584,
+        "selected_energy": -23,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.832,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.076,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02546915039420128
+      },
+      "uniform_random": {
+        "selected_index": 786498,
+        "selected_energy": 372,
+        "objective_gap": 395,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3284.149,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.444228096207442
+            ],
+            "betas": [
+              2.176834753637796
+            ],
+            "phase_energy_scale": 13069.0,
+            "exact_expected_energy": 2045.5327427199322,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 39
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524289,
+            "selected_energy": -12,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2105.238,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5217391304347826,
+            "seconds": 1.720782607793808
+          },
+          "noisy_qaoa": {
+            "selected_index": 533504,
+            "selected_energy": -15,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2207.097,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6521739130434783,
+            "seconds": 414.0751533601433
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.2691135723524845,
+              2.575720025156419
+            ],
+            "betas": [
+              2.4768515171751724,
+              2.5424854225612226
+            ],
+            "phase_energy_scale": 13069.0,
+            "exact_expected_energy": 1801.0323944188249,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 61
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524293,
+            "selected_energy": -15,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1868.141,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6521739130434783,
+            "seconds": 3.476720530539751
+          },
+          "noisy_qaoa": {
+            "selected_index": 524288,
+            "selected_energy": -9,
+            "objective_gap": 14,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2069.357,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.391304347826087,
+            "seconds": 729.5701158363372
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              2.660440256785764,
+              5.640103016603652,
+              0.38138226011025494
+            ],
+            "betas": [
+              0.30436639380952774,
+              2.4067815999486966,
+              2.8540448852653397
+            ],
+            "phase_energy_scale": 13069.0,
+            "exact_expected_energy": 1190.4159956766844,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 83
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 200704,
+            "selected_energy": -20,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1182.185,
+            "valid_fraction": 0.031,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8695652173913043,
+            "seconds": 5.356828462332487
+          },
+          "noisy_qaoa": {
+            "selected_index": 4113,
+            "selected_energy": -15,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1726.844,
+            "valid_fraction": 0.008,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6521739130434783,
+            "seconds": 659.4365266151726
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 4,
+      "seed": 20281804,
+      "input_sha256": "7db85db5148f589786cc299ee7f15e9272285e561f0536d8bfece3bf7b24675d",
+      "exact_energy": -22,
+      "exact_index": 132097,
+      "exact_seconds": 2.562840772792697,
+      "cpsat_natural_seconds": 0.006335115060210228,
+      "cpsat_qubo_seconds": 0.007862871512770653,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 132097,
+        "selected_energy": -22,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -19.528,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.402,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04313711263239384
+      },
+      "dwave_neal": {
+        "selected_index": 132097,
+        "selected_energy": -22,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -13.91,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.109,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.023697277531027794
+      },
+      "uniform_random": {
+        "selected_index": 32768,
+        "selected_energy": -2,
+        "objective_gap": 20,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 2900.715,
+        "valid_fraction": 0.001,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.09090909090909091
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.125809477137906
+            ],
+            "betas": [
+              2.369434310136435
+            ],
+            "phase_energy_scale": 11749.0,
+            "exact_expected_energy": 1613.3074887465787,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 39
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 525313,
+            "selected_energy": -20,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1608.199,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.9090909090909091,
+            "seconds": 0.9786235354840755
+          },
+          "noisy_qaoa": {
+            "selected_index": 16400,
+            "selected_energy": -13,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1754.999,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5909090909090909,
+            "seconds": 415.2268040385097
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.087931345381596,
+              4.543937486595506
+            ],
+            "betas": [
+              2.9246338348722056,
+              2.5471608847769445
+            ],
+            "phase_energy_scale": 11749.0,
+            "exact_expected_energy": 938.9488171939204,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 61
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 17408,
+            "selected_energy": -13,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 929.985,
+            "valid_fraction": 0.025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5909090909090909,
+            "seconds": 4.006438832730055
+          },
+          "noisy_qaoa": {
+            "selected_index": 1026,
+            "selected_energy": -12,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1290.427,
+            "valid_fraction": 0.009,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5454545454545454,
+            "seconds": 730.0172589663416
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.3483240678899255,
+              2.0557229197312634,
+              3.6653773377909626
+            ],
+            "betas": [
+              0.5189466261117114,
+              0.006344374033116855,
+              2.1516621845847252
+            ],
+            "phase_energy_scale": 11749.0,
+            "exact_expected_energy": 972.6551832155556,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 83
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 132352,
+            "selected_energy": -19,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 968.415,
+            "valid_fraction": 0.03,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8636363636363636,
+            "seconds": 5.685895532369614
+          },
+          "noisy_qaoa": {
+            "selected_index": 2176,
+            "selected_energy": -14,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1503.49,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6363636363636364,
+            "seconds": 670.8873367775232
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 5,
+      "seed": 20281805,
+      "input_sha256": "60119ea5c1c014e785548dc9eb0857f9dc2683b28c09aa7c18056b8de24d2e8f",
+      "exact_energy": -27,
+      "exact_index": 2066,
+      "exact_seconds": 2.4093061313033104,
+      "cpsat_natural_seconds": 0.007586782798171043,
+      "cpsat_qubo_seconds": 0.010021116584539413,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 2066,
+        "selected_energy": -27,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -22.112,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.071,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04857446998357773
+      },
+      "dwave_neal": {
+        "selected_index": 2066,
+        "selected_energy": -27,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -16.989,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.043,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.024913465604186058
+      },
+      "uniform_random": {
+        "selected_index": 5120,
+        "selected_energy": 124,
+        "objective_gap": 151,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4569.612,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.838639053805692
+            ],
+            "betas": [
+              2.3090965223836344
+            ],
+            "phase_energy_scale": 18085.0,
+            "exact_expected_energy": 2272.228481400045,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 38
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 3,
+            "selected_energy": -17,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2340.791,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6296296296296297,
+            "seconds": 1.5207457933574915
+          },
+          "noisy_qaoa": {
+            "selected_index": 17412,
+            "selected_energy": -15,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2526.168,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556,
+            "seconds": 417.47883238084614
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              0.270845715393936,
+              4.838738377509882
+            ],
+            "betas": [
+              3.0672067601639914,
+              2.2690065625920406
+            ],
+            "phase_energy_scale": 18085.0,
+            "exact_expected_energy": 2536.5034334871953,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 60
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 388,
+            "selected_energy": -18,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2500.717,
+            "valid_fraction": 0.011,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666,
+            "seconds": 3.517138797789812
+          },
+          "noisy_qaoa": {
+            "selected_index": 278784,
+            "selected_energy": 118,
+            "objective_gap": 145,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2910.533,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 732.3252986017615
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.36920881395534,
+              3.4167293604419036,
+              2.6189320306871173
+            ],
+            "betas": [
+              2.6952354624843,
+              0.2695567384380083,
+              2.6202117718242417
+            ],
+            "phase_energy_scale": 18085.0,
+            "exact_expected_energy": 1813.8609837596184,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 82
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 52,
+            "selected_energy": -21,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1712.109,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778,
+            "seconds": 5.134335674345493
+          },
+          "noisy_qaoa": {
+            "selected_index": 16385,
+            "selected_energy": -12,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2570.036,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4444444444444444,
+            "seconds": 662.4900560751557
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 6,
+      "seed": 20281806,
+      "input_sha256": "b211a23645e5a89540886c1a3effa465e267b0782ca11189648bfca048a98cce",
+      "exact_energy": -28,
+      "exact_index": 135234,
+      "exact_seconds": 2.5330286156386137,
+      "cpsat_natural_seconds": 0.007598331198096275,
+      "cpsat_qubo_seconds": 0.009009432047605515,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 135234,
+        "selected_energy": -28,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -23.229,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.32,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04652789793908596
+      },
+      "dwave_neal": {
+        "selected_index": 135234,
+        "selected_energy": -28,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -16.934,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.083,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.0254904143512249
+      },
+      "uniform_random": {
+        "selected_index": 270368,
+        "selected_energy": 177,
+        "objective_gap": 205,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3103.626,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.884190566143283
+            ],
+            "betas": [
+              2.3214931550562667
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 1775.3716787579397,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 37
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 135232,
+            "selected_energy": -25,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1764.516,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8928571428571429,
+            "seconds": 1.7673799730837345
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": -11,
+            "objective_gap": 17,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1921.232,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.39285714285714285,
+            "seconds": 398.7205433957279
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              2.6496991270089345,
+              4.1911991430613895
+            ],
+            "betas": [
+              0.7422434956652101,
+              2.0425931032527993
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 1611.6905282957491,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 58
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 320,
+            "selected_energy": -15,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1587.95,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5357142857142857,
+            "seconds": 3.588901588693261
+          },
+          "noisy_qaoa": {
+            "selected_index": 2080,
+            "selected_energy": -10,
+            "objective_gap": 18,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1935.866,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.35714285714285715,
+            "seconds": 709.8756002355367
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.603911217239883,
+              4.223079069229813,
+              4.320782744241714
+            ],
+            "betas": [
+              2.5839574374316174,
+              0.9622761967559403,
+              1.8829787346301519
+            ],
+            "phase_energy_scale": 12541.0,
+            "exact_expected_energy": 862.0787606740051,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 79
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 336,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 878.93,
+            "valid_fraction": 0.048,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286,
+            "seconds": 4.956197150051594
+          },
+          "noisy_qaoa": {
+            "selected_index": 12288,
+            "selected_energy": -11,
+            "objective_gap": 17,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1454.657,
+            "valid_fraction": 0.011,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.39285714285714285,
+            "seconds": 674.7157518919557
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.7,
+      "num_edges": 133,
+      "instance": 7,
+      "seed": 20281807,
+      "input_sha256": "84e18e45250a76d37010961e52ea0de7b1399a35d14215405434f8abcce28569",
+      "exact_energy": -24,
+      "exact_index": 5128,
+      "exact_seconds": 2.5714346393942833,
+      "cpsat_natural_seconds": 0.007899388670921326,
+      "cpsat_qubo_seconds": 0.010241085663437843,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 5128,
+        "selected_energy": -24,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -19.24,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.104,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.046753980219364166
+      },
+      "dwave_neal": {
+        "selected_index": 5128,
+        "selected_energy": -24,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.862,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.038,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02540273219347
+      },
+      "uniform_random": {
+        "selected_index": 528385,
+        "selected_energy": 94,
+        "objective_gap": 118,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3821.609,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.155150021007851
+            ],
+            "betas": [
+              2.0723661295526505
+            ],
+            "phase_energy_scale": 15577.0,
+            "exact_expected_energy": 2194.052141289005,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 133,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 213,
+            "wire_ops": 194,
+            "depth": 38
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 5120,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2197.948,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334,
+            "seconds": 1.7486082520335913
+          },
+          "noisy_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -6,
+            "objective_gap": 18,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2399.3,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.25,
+            "seconds": 414.43663904070854
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.618193741022516,
+              6.173242612434537
+            ],
+            "betas": [
+              0.6562701163591377,
+              2.2778067290018944
+            ],
+            "phase_energy_scale": 15577.0,
+            "exact_expected_energy": 1127.1107891905563,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 266,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 386,
+            "wire_ops": 367,
+            "depth": 59
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 5128,
+            "selected_energy": -24,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1136.674,
+            "valid_fraction": 0.024,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 3.7700303457677364
+          },
+          "noisy_qaoa": {
+            "selected_index": 1028,
+            "selected_energy": -14,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1732.688,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5833333333333334,
+            "seconds": 704.8710603527725
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.911002132173481,
+              2.528173668299455,
+              5.589559128837111
+            ],
+            "betas": [
+              1.3235982053450315,
+              2.7848085357590633,
+              1.988266701271154
+            ],
+            "phase_energy_scale": 15577.0,
+            "exact_expected_energy": 1543.656387423183,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 399,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 559,
+            "wire_ops": 540,
+            "depth": 81
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 4360,
+            "selected_energy": -19,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1607.053,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7916666666666666,
+            "seconds": 5.712240759283304
+          },
+          "noisy_qaoa": {
+            "selected_index": 1036,
+            "selected_energy": -21,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2274.079,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.875,
+            "seconds": 675.582625452429
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 0,
+      "seed": 20281950,
+      "input_sha256": "d9112469938c7e315b0668761eedd7e4794f59ed0e7b62f656e499402e07d81b",
+      "exact_energy": -18,
+      "exact_index": 524801,
+      "exact_seconds": 2.9697778671979904,
+      "cpsat_natural_seconds": 0.0070847757160663605,
+      "cpsat_qubo_seconds": 0.01024913601577282,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 524801,
+        "selected_energy": -18,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.058,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.218,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04813275299966335
+      },
+      "dwave_neal": {
+        "selected_index": 524801,
+        "selected_energy": -18,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -10.859,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.07,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025647751986980438
+      },
+      "uniform_random": {
+        "selected_index": 8832,
+        "selected_energy": 90,
+        "objective_gap": 108,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4076.688,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.160429581599123
+            ],
+            "betas": [
+              1.9144526765030212
+            ],
+            "phase_energy_scale": 16745.0,
+            "exact_expected_energy": 2977.611689706419,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 39
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524801,
+            "selected_energy": -18,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2945.516,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 2.075642880052328
+          },
+          "noisy_qaoa": {
+            "selected_index": 524801,
+            "selected_energy": -18,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 3143.129,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 464.9646334256977
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.217017497533005,
+              6.154335265251912
+            ],
+            "betas": [
+              0.42289469799272184,
+              2.5140364771140375
+            ],
+            "phase_energy_scale": 16745.0,
+            "exact_expected_energy": 1308.987305342792,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 61
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 288,
+            "selected_energy": -10,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1326.183,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556,
+            "seconds": 4.592102972790599
+          },
+          "noisy_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -9,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2090.66,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5,
+            "seconds": 857.7819504346699
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 1,
+      "seed": 20281951,
+      "input_sha256": "5ee5a647aadfae87efe326cb6c32454711e23ba28a3a6f4e2c187887f9afc887",
+      "exact_energy": -15,
+      "exact_index": 294912,
+      "exact_seconds": 2.9805657602846622,
+      "cpsat_natural_seconds": 0.007026027888059616,
+      "cpsat_qubo_seconds": 0.010550815612077713,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 294912,
+        "selected_energy": -15,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -12.402,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.111,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.047869736328721046
+      },
+      "dwave_neal": {
+        "selected_index": 294912,
+        "selected_energy": -15,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -9.388,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.066,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025088785216212273
+      },
+      "uniform_random": {
+        "selected_index": 622848,
+        "selected_energy": 387,
+        "objective_gap": 402,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3221.15,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.569173261678445
+            ],
+            "betas": [
+              2.08563727884928
+            ],
+            "phase_energy_scale": 13042.0,
+            "exact_expected_energy": 2138.5754566488713,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 39
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 69632,
+            "selected_energy": -6,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2145.301,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4,
+            "seconds": 2.1369714234024286
+          },
+          "noisy_qaoa": {
+            "selected_index": 16384,
+            "selected_energy": -8,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2278.225,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5333333333333333,
+            "seconds": 470.1140634007752
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.258072885761238,
+              4.611832967836479
+            ],
+            "betas": [
+              2.66227023659968,
+              2.580438796349746
+            ],
+            "phase_energy_scale": 13042.0,
+            "exact_expected_energy": 1249.6068350633068,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 61
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 32784,
+            "selected_energy": -13,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1241.993,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8666666666666667,
+            "seconds": 4.560322949662805
+          },
+          "noisy_qaoa": {
+            "selected_index": 32784,
+            "selected_energy": -13,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1767.584,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8666666666666667,
+            "seconds": 781.3608225490898
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 2,
+      "seed": 20281952,
+      "input_sha256": "3c76998a55904d4f17eb4905d2de1648df6dee00d344d37ad4cf4ca07c816cea",
+      "exact_energy": -18,
+      "exact_index": 288,
+      "exact_seconds": 2.961033457890153,
+      "cpsat_natural_seconds": 0.007527722045779228,
+      "cpsat_qubo_seconds": 0.011416411027312279,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 288,
+        "selected_energy": -18,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -14.928,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.106,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.0457498487085104
+      },
+      "dwave_neal": {
+        "selected_index": 288,
+        "selected_energy": -18,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -11.629,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.05,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025459200143814087
+      },
+      "uniform_random": {
+        "selected_index": 98818,
+        "selected_energy": 319,
+        "objective_gap": 337,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4466.0,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.028673808446266
+            ],
+            "betas": [
+              2.571480449963714
+            ],
+            "phase_energy_scale": 18194.0,
+            "exact_expected_energy": 2345.624111053309,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524304,
+            "selected_energy": -15,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2371.078,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334,
+            "seconds": 1.804111460223794
+          },
+          "noisy_qaoa": {
+            "selected_index": 16384,
+            "selected_energy": -2,
+            "objective_gap": 16,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2645.363,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.1111111111111111,
+            "seconds": 473.8150112964213
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              1.016392883455181,
+              4.654855245392014
+            ],
+            "betas": [
+              2.5139838250748654,
+              2.4416856118831287
+            ],
+            "phase_energy_scale": 18194.0,
+            "exact_expected_energy": 2593.1909139462678,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2473.021,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.16666666666666666,
+            "seconds": 4.517803916707635
+          },
+          "noisy_qaoa": {
+            "selected_index": 66048,
+            "selected_energy": -10,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3171.016,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556,
+            "seconds": 845.0121437814087
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 3,
+      "seed": 20281953,
+      "input_sha256": "62fd52145ac19d6f0685b28489a12fd0d875969eda7d25141eafa4f339334af8",
+      "exact_energy": -19,
+      "exact_index": 262401,
+      "exact_seconds": 2.9602304734289646,
+      "cpsat_natural_seconds": 0.007211901247501373,
+      "cpsat_qubo_seconds": 0.011265574023127556,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 262401,
+        "selected_energy": -19,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -15.288,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.263,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04622951149940491
+      },
+      "dwave_neal": {
+        "selected_index": 262401,
+        "selected_energy": -19,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -11.576,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.088,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025186335667967796
+      },
+      "uniform_random": {
+        "selected_index": 262147,
+        "selected_energy": 171,
+        "objective_gap": 190,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3822.362,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.276800808395781
+            ],
+            "betas": [
+              2.3981047252765633
+            ],
+            "phase_energy_scale": 15457.0,
+            "exact_expected_energy": 1828.1442977217007,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 131104,
+            "selected_energy": -13,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1789.927,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6842105263157895,
+            "seconds": 2.068935012444854
+          },
+          "noisy_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -8,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2101.821,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.42105263157894735,
+            "seconds": 478.73740920238197
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              2.960164274042718,
+              5.005220036210739
+            ],
+            "betas": [
+              2.8771142211448395,
+              2.399385273325952
+            ],
+            "phase_energy_scale": 15457.0,
+            "exact_expected_energy": 1612.084306170846,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 262401,
+            "selected_energy": -19,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1537.349,
+            "valid_fraction": 0.011,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 4.497201517224312
+          },
+          "noisy_qaoa": {
+            "selected_index": 16385,
+            "selected_energy": -10,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2212.055,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5263157894736842,
+            "seconds": 849.8703979328275
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 4,
+      "seed": 20281954,
+      "input_sha256": "14d8552ea134911e0c42ffa23b026b46c806cf3c9f556eb69bde18a57a979301",
+      "exact_energy": -21,
+      "exact_index": 524300,
+      "exact_seconds": 2.9757964201271534,
+      "cpsat_natural_seconds": 0.00704047828912735,
+      "cpsat_qubo_seconds": 0.010321911424398422,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 524300,
+        "selected_energy": -21,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -15.429,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.249,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.047621384263038635
+      },
+      "dwave_neal": {
+        "selected_index": 524300,
+        "selected_energy": -21,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -11.406,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.082,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02573489584028721
+      },
+      "uniform_random": {
+        "selected_index": 196612,
+        "selected_energy": 184,
+        "objective_gap": 205,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3895.357,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.773226963713917
+            ],
+            "betas": [
+              2.234711401087079
+            ],
+            "phase_energy_scale": 15940.0,
+            "exact_expected_energy": 2372.126961997894,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 40
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 1280,
+            "selected_energy": -10,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2369.694,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.47619047619047616,
+            "seconds": 2.095503391698003
+          },
+          "noisy_qaoa": {
+            "selected_index": 524296,
+            "selected_energy": -12,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2587.403,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5714285714285714,
+            "seconds": 484.5415302719921
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.545606252339246,
+              4.024205763169952
+            ],
+            "betas": [
+              2.6024093853899486,
+              2.595295475897448
+            ],
+            "phase_energy_scale": 15940.0,
+            "exact_expected_energy": 1816.6143908890408,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 62
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 520,
+            "selected_energy": -15,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1773.34,
+            "valid_fraction": 0.009,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7142857142857143,
+            "seconds": 4.18289634399116
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -7,
+            "objective_gap": 14,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2386.183,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333,
+            "seconds": 853.3272604309022
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 5,
+      "seed": 20281955,
+      "input_sha256": "d2b78beb8baf478e59711a365f9aea1748728ab5ba42166998c209992dda5941",
+      "exact_energy": -20,
+      "exact_index": 17440,
+      "exact_seconds": 2.8671452458947897,
+      "cpsat_natural_seconds": 0.007918288931250572,
+      "cpsat_qubo_seconds": 0.010217724367976189,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 17440,
+        "selected_energy": -20,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -16.265,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.232,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04454181157052517
+      },
+      "dwave_neal": {
+        "selected_index": 17440,
+        "selected_energy": -20,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -12.453,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.073,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.026414338499307632
+      },
+      "uniform_random": {
+        "selected_index": 41232,
+        "selected_energy": 521,
+        "objective_gap": 541,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4474.591,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.094218180598909
+            ],
+            "betas": [
+              2.2112531351266838
+            ],
+            "phase_energy_scale": 17550.0,
+            "exact_expected_energy": 2252.093160796878,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -9,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2327.444,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.45,
+            "seconds": 1.7748130280524492
+          },
+          "noisy_qaoa": {
+            "selected_index": 8224,
+            "selected_energy": -12,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2527.531,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6,
+            "seconds": 464.1713649313897
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.075895276629097,
+              5.782782200037363
+            ],
+            "betas": [
+              3.0302793250211493,
+              2.701839831145698
+            ],
+            "phase_energy_scale": 17550.0,
+            "exact_expected_energy": 1384.5026597356841,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 34816,
+            "selected_energy": -18,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1381.744,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.9,
+            "seconds": 4.649423364549875
+          },
+          "noisy_qaoa": {
+            "selected_index": 516,
+            "selected_energy": -13,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2124.273,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.65,
+            "seconds": 854.6606885269284
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              0.01753710835275137,
+              1.9771558958629747,
+              5.2376466606703955
+            ],
+            "betas": [
+              2.3865144590422833,
+              0.7795413173314386,
+              2.1181873209649846
+            ],
+            "phase_energy_scale": 17550.0,
+            "exact_expected_energy": 2156.523109710636,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 60,
+            "rz_count": 80,
+            "measure_count": 20,
+            "qiskit_total_ops": 484,
+            "wire_ops": 465,
+            "depth": 65
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 2052,
+            "selected_energy": -14,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2143.601,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7,
+            "seconds": 4.363206686452031
+          },
+          "noisy_qaoa": {
+            "selected_index": 1184,
+            "selected_energy": 89,
+            "objective_gap": 109,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2701.817,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 485.566716870293
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 6,
+      "seed": 20281956,
+      "input_sha256": "a72481249a5e1d0463f381038da69631f93a53da8853ab243965a42a96bd870f",
+      "exact_energy": -16,
+      "exact_index": 272,
+      "exact_seconds": 3.031826911494136,
+      "cpsat_natural_seconds": 0.007315443828701973,
+      "cpsat_qubo_seconds": 0.00983852706849575,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 272,
+        "selected_energy": -16,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -13.744,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.225,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.046148695051670074
+      },
+      "dwave_neal": {
+        "selected_index": 272,
+        "selected_energy": -16,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -10.599,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.098,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025353187695145607
+      },
+      "uniform_random": {
+        "selected_index": 12552,
+        "selected_energy": 503,
+        "objective_gap": 519,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4231.11,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.019294871165454
+            ],
+            "betas": [
+              2.071032370695845
+            ],
+            "phase_energy_scale": 16906.0,
+            "exact_expected_energy": 2676.6387604353163,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 8256,
+            "selected_energy": -10,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2697.752,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.625,
+            "seconds": 2.116505939513445
+          },
+          "noisy_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -1,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2901.405,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.0625,
+            "seconds": 476.2668673694134
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              1.6624102504429834,
+              5.3627432559116475
+            ],
+            "betas": [
+              2.616410932836924,
+              2.144510833476926
+            ],
+            "phase_energy_scale": 16906.0,
+            "exact_expected_energy": 2528.272889666192,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 66560,
+            "selected_energy": -16,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2487.525,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 4.52146228775382
+          },
+          "noisy_qaoa": {
+            "selected_index": 516,
+            "selected_energy": -3,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3006.061,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.1875,
+            "seconds": 819.5398374348879
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.85,
+      "num_edges": 162,
+      "instance": 7,
+      "seed": 20281957,
+      "input_sha256": "b9e83cb66173a43ab585a68320c8cfd6bbbbfbef433e756b0fc45d52fb2c84dc",
+      "exact_energy": -19,
+      "exact_index": 4610,
+      "exact_seconds": 2.9499863497912884,
+      "cpsat_natural_seconds": 0.006945200264453888,
+      "cpsat_qubo_seconds": 0.009690765291452408,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 4610,
+        "selected_energy": -19,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -15.188,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.291,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.046705462038517
+      },
+      "dwave_neal": {
+        "selected_index": 4610,
+        "selected_energy": -19,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -11.376,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.071,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025342611595988274
+      },
+      "uniform_random": {
+        "selected_index": 278528,
+        "selected_energy": -7,
+        "objective_gap": 12,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 3840.616,
+        "valid_fraction": 0.002,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.3684210526315789
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.922190597635548
+            ],
+            "betas": [
+              2.545717580200515
+            ],
+            "phase_energy_scale": 15457.0,
+            "exact_expected_energy": 1988.2016995401796,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 162,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 242,
+            "wire_ops": 223,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 515,
+            "selected_energy": 75,
+            "objective_gap": 94,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2029.985,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 2.120327617973089
+          },
+          "noisy_qaoa": {
+            "selected_index": 2560,
+            "selected_energy": -17,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2221.83,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8947368421052632,
+            "seconds": 473.81920714862645
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.959348487860068,
+              3.8812927861882005
+            ],
+            "betas": [
+              0.828145638627017,
+              1.5425924053113262
+            ],
+            "phase_energy_scale": 15457.0,
+            "exact_expected_energy": 1978.7014641225774,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 324,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 444,
+            "wire_ops": 425,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 2080,
+            "selected_energy": -17,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1964.487,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8947368421052632,
+            "seconds": 4.557053497061133
+          },
+          "noisy_qaoa": {
+            "selected_index": 65544,
+            "selected_energy": -4,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2493.887,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.21052631578947367,
+            "seconds": 863.5251224990934
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 486
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 0,
+      "seed": 20282100,
+      "input_sha256": "065ad4ff522567729588d671824d8cefb2f503f066bdfb3bd47d45ce1f1b991a",
+      "exact_energy": -8,
+      "exact_index": 1,
+      "exact_seconds": 3.432893654331565,
+      "cpsat_natural_seconds": 0.006002457812428474,
+      "cpsat_qubo_seconds": 0.013731587678194046,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 1,
+        "selected_energy": -8,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.694,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.237,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04251604713499546
+      },
+      "dwave_neal": {
+        "selected_index": 1,
+        "selected_energy": -8,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -4.858,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.197,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02399156428873539
+      },
+      "uniform_random": {
+        "selected_index": 48,
+        "selected_energy": 71,
+        "objective_gap": 79,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 3717.0,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.039472850026637
+            ],
+            "betas": [
+              1.9498813456554374
+            ],
+            "phase_energy_scale": 15121.0,
+            "exact_expected_energy": 2441.5694994827754,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2477.962,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5,
+            "seconds": 2.4261673614382744
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2615.597,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5,
+            "seconds": 534.6704996097833
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.864527613103221,
+              2.591825001889811
+            ],
+            "betas": [
+              2.6572613682892126,
+              2.840044541433103
+            ],
+            "phase_energy_scale": 15121.0,
+            "exact_expected_energy": 1842.6798404438393,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 2,
+            "selected_energy": -7,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1795.086,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.875,
+            "seconds": 5.144323777407408
+          },
+          "noisy_qaoa": {
+            "selected_index": 2304,
+            "selected_energy": 73,
+            "objective_gap": 81,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2366.031,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 942.946562377736
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 1,
+      "seed": 20282101,
+      "input_sha256": "0bf08dbc4aa6c6381cd49fb512a0c79ead587d4008b22375fda7f1dbb1bf7a6b",
+      "exact_energy": -9,
+      "exact_index": 8,
+      "exact_seconds": 3.397011546418071,
+      "cpsat_natural_seconds": 0.006998101249337196,
+      "cpsat_qubo_seconds": 0.013657687231898308,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -6.956,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.256,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.0429840162396431
+      },
+      "dwave_neal": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.693,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.174,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02348737232387066
+      },
+      "uniform_random": {
+        "selected_index": 36904,
+        "selected_energy": 557,
+        "objective_gap": 566,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4684.236,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.434688301847565
+            ],
+            "betas": [
+              2.1615040473637968
+            ],
+            "phase_energy_scale": 18523.0,
+            "exact_expected_energy": 2656.1187674927237,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 65568,
+            "selected_energy": 86,
+            "objective_gap": 95,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2666.078,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 2.3289932142943144
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2932.395,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333,
+            "seconds": 536.3940022867173
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              1.9577133871288812,
+              5.150188166450532
+            ],
+            "betas": [
+              0.25020675234821077,
+              2.217185743098583
+            ],
+            "phase_energy_scale": 18523.0,
+            "exact_expected_energy": 2001.6897997092155,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 256,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2006.753,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888,
+            "seconds": 5.124380862340331
+          },
+          "noisy_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2727.884,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556,
+            "seconds": 944.1931847520173
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 2,
+      "seed": 20282102,
+      "input_sha256": "31c316b788c3b87da0d63dfd5072dd9e46a2c970c44c7d923e4ef23c151fd9aa",
+      "exact_energy": -9,
+      "exact_index": 16,
+      "exact_seconds": 3.4171355552971363,
+      "cpsat_natural_seconds": 0.00620955228805542,
+      "cpsat_qubo_seconds": 0.013678811490535736,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 16,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -7.304,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.409,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04190113767981529
+      },
+      "dwave_neal": {
+        "selected_index": 16,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.826,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.246,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.023847829550504684
+      },
+      "uniform_random": {
+        "selected_index": 65,
+        "selected_energy": 83,
+        "objective_gap": 92,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4193.405,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              6.126190466046828
+            ],
+            "betas": [
+              2.3645734670688814
+            ],
+            "phase_energy_scale": 17011.0,
+            "exact_expected_energy": 2075.308259980115,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 16,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2130.616,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.002,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 2.41676826775074
+          },
+          "noisy_qaoa": {
+            "selected_index": 12,
+            "selected_energy": 76,
+            "objective_gap": 85,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2387.856,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 547.8665264509618
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.061434894673807,
+              6.128214076876332
+            ],
+            "betas": [
+              2.6341108917383638,
+              2.532647916820108
+            ],
+            "phase_energy_scale": 17011.0,
+            "exact_expected_energy": 1491.2920711633255,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -6,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1544.534,
+            "valid_fraction": 0.012,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666,
+            "seconds": 4.7759909722954035
+          },
+          "noisy_qaoa": {
+            "selected_index": 256,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2170.122,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 934.8919198680669
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 3,
+      "seed": 20282103,
+      "input_sha256": "8e5fd571c03f33ad9ce2812a7beba5b5c1f52dfdc9ed739395bfcfebd75e1af0",
+      "exact_energy": -9,
+      "exact_index": 8,
+      "exact_seconds": 3.4119629692286253,
+      "cpsat_natural_seconds": 0.006147461012005806,
+      "cpsat_qubo_seconds": 0.014026390388607979,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -6.267,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.141,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.0425871517509222
+      },
+      "dwave_neal": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.383,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.109,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.023672014474868774
+      },
+      "uniform_random": {
+        "selected_index": 24596,
+        "selected_energy": 532,
+        "objective_gap": 541,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4318.519,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.70687836568462
+            ],
+            "betas": [
+              2.5009224404866086
+            ],
+            "phase_energy_scale": 17389.0,
+            "exact_expected_energy": 2281.2658045690046,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2302.787,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556,
+            "seconds": 2.5433875545859337
+          },
+          "noisy_qaoa": {
+            "selected_index": 263168,
+            "selected_energy": 78,
+            "objective_gap": 87,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2586.1,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 537.7661281581968
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              1.7594782706266388,
+              3.9224794114206754
+            ],
+            "betas": [
+              3.0834463205895686,
+              2.4390311223201846
+            ],
+            "phase_energy_scale": 17389.0,
+            "exact_expected_energy": 2263.4379853912174,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 16384,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2259.845,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888,
+            "seconds": 5.0386621076613665
+          },
+          "noisy_qaoa": {
+            "selected_index": 524296,
+            "selected_energy": 76,
+            "objective_gap": 85,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2853.262,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 927.1198472976685
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 4,
+      "seed": 20282104,
+      "input_sha256": "e5511646074a0145be94473cef768724e58e8eea3c352dd56964d0f62c910b03",
+      "exact_energy": -9,
+      "exact_index": 8,
+      "exact_seconds": 3.416907772421837,
+      "cpsat_natural_seconds": 0.006209416314959526,
+      "cpsat_qubo_seconds": 0.013682380318641663,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -7.844,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.578,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.041905611753463745
+      },
+      "dwave_neal": {
+        "selected_index": 8,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -6.465,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.414,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.024577399715781212
+      },
+      "uniform_random": {
+        "selected_index": 36874,
+        "selected_energy": 660,
+        "objective_gap": 669,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 5387.72,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.9783008872241465
+            ],
+            "betas": [
+              2.1409854963294643
+            ],
+            "phase_energy_scale": 21736.0,
+            "exact_expected_energy": 2974.265878978692,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 3024.431,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.002,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 2.4295269548892975
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -6,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3323.913,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666,
+            "seconds": 546.0775894913822
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.524889348583721,
+              3.689001551239836
+            ],
+            "betas": [
+              3.059534483045538,
+              2.1890211322224418
+            ],
+            "phase_energy_scale": 21736.0,
+            "exact_expected_energy": 2105.4922005364256,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 8192,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2127.952,
+            "valid_fraction": 0.018,
+            "optimum_fraction": 0.003,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 4.727449730038643
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2988.622,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.002,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 948.3441070877016
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 5,
+      "seed": 20282105,
+      "input_sha256": "3080c3e8bb233c544e692f76a5aeef88c4283fe08aefdbe7a1bd599c090f5df1",
+      "exact_energy": -9,
+      "exact_index": 128,
+      "exact_seconds": 3.2654016874730587,
+      "cpsat_natural_seconds": 0.00708770751953125,
+      "cpsat_qubo_seconds": 0.014324408024549484,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 128,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -7.219,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.335,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04061119072139263
+      },
+      "dwave_neal": {
+        "selected_index": 128,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.706,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.186,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.02422482520341873
+      },
+      "uniform_random": {
+        "selected_index": 65804,
+        "selected_energy": 589,
+        "objective_gap": 598,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4780.574,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.3383216269400755
+            ],
+            "betas": [
+              2.750115325689557
+            ],
+            "phase_energy_scale": 19279.0,
+            "exact_expected_energy": 3395.540542501563,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 262146,
+            "selected_energy": 98,
+            "objective_gap": 107,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3416.062,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 2.34548401273787
+          },
+          "noisy_qaoa": {
+            "selected_index": 525312,
+            "selected_energy": 100,
+            "objective_gap": 109,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3617.559,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 534.2898714598268
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.8136558681139756,
+              5.332690158148752
+            ],
+            "betas": [
+              2.853629892023744,
+              2.882489161248625
+            ],
+            "phase_energy_scale": 19279.0,
+            "exact_expected_energy": 2401.2806254255174,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 264192,
+            "selected_energy": 96,
+            "objective_gap": 105,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2363.482,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 5.128382630646229
+          },
+          "noisy_qaoa": {
+            "selected_index": 4352,
+            "selected_energy": 85,
+            "objective_gap": 94,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3076.272,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 934.8977115433663
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 6,
+      "seed": 20282106,
+      "input_sha256": "e87772d494a8be70502cf4e8fdbe4b0bc524ca4fb9461b9df9cdc25f4cb23d63",
+      "exact_energy": -9,
+      "exact_index": 524288,
+      "exact_seconds": 3.456325715407729,
+      "cpsat_natural_seconds": 0.005897024646401405,
+      "cpsat_qubo_seconds": 0.013773104175925255,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 524288,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -6.711,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.113,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.04173662327229977
+      },
+      "dwave_neal": {
+        "selected_index": 524288,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.596,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.075,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.023297971114516258
+      },
+      "uniform_random": {
+        "selected_index": 8228,
+        "selected_energy": 280,
+        "objective_gap": 289,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4833.841,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.76359262951808
+            ],
+            "betas": [
+              2.076752717324885
+            ],
+            "phase_energy_scale": 18901.0,
+            "exact_expected_energy": 2778.3070125910563,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 524288,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2711.477,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0,
+            "seconds": 2.4632542300969362
+          },
+          "noisy_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3061.582,
+            "valid_fraction": 0.003,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888,
+            "seconds": 545.4860452786088
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              4.4758492452639995,
+              3.695270163433551
+            ],
+            "betas": [
+              2.7427320029742828,
+              2.8426506926729402
+            ],
+            "phase_energy_scale": 18901.0,
+            "exact_expected_energy": 2243.535792932484,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2235.62,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888,
+            "seconds": 5.082390567287803
+          },
+          "noisy_qaoa": {
+            "selected_index": 4352,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2929.942,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 948.9452076684684
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "num_edges": 190,
+      "instance": 7,
+      "seed": 20282107,
+      "input_sha256": "16cf5e47724cc4b7d43bd630b87af255a9795c5796e0469d84f6fd4ee7ab1868",
+      "exact_energy": -9,
+      "exact_index": 128,
+      "exact_seconds": 1.3645038679242134,
+      "cpsat_natural_seconds": 0.008724739775061607,
+      "cpsat_qubo_seconds": 0.012504704296588898,
+      "z3_natural_seconds": null,
+      "z3_qubo_seconds": null,
+      "sa": {
+        "selected_index": 128,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -6.452,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.113,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.039720332249999046
+      },
+      "dwave_neal": {
+        "selected_index": 128,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": -5.521,
+        "valid_fraction": 1.0,
+        "optimum_fraction": 0.085,
+        "feasible_weight_ratio": 1.0,
+        "seconds": 0.025838416069746017
+      },
+      "uniform_random": {
+        "selected_index": 388,
+        "selected_energy": 282,
+        "objective_gap": 291,
+        "selected_optimal": false,
+        "selected_valid": false,
+        "mean_sample_energy": 4591.874,
+        "valid_fraction": 0.0,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": null
+      },
+      "qaoa": {
+        "p1": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              5.934017617154148
+            ],
+            "betas": [
+              2.2859703763188928
+            ],
+            "phase_energy_scale": 18901.0,
+            "exact_expected_energy": 2405.9156531922904,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 190,
+            "r_count": 20,
+            "rz_count": 40,
+            "measure_count": 20,
+            "qiskit_total_ops": 270,
+            "wire_ops": 251,
+            "depth": 41
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 64,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2422.322,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778,
+            "seconds": 1.1584539413452148
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2734.287,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888,
+            "seconds": 551.8005241081119
+          }
+        },
+        "p2": {
+          "pruned_by_gate_ceiling": false,
+          "angles": {
+            "gammas": [
+              3.995262215463365,
+              2.7214986989416885
+            ],
+            "betas": [
+              0.4052042514924699,
+              2.226071227164436
+            ],
+            "phase_energy_scale": 18901.0,
+            "exact_expected_energy": 2189.2794446234175,
+            "expectation_evaluations": 24
+          },
+          "circuit_stats": {
+            "valid": true,
+            "num_qubits": 20,
+            "shots": 200,
+            "rxx_count": 380,
+            "r_count": 40,
+            "rz_count": 60,
+            "measure_count": 20,
+            "qiskit_total_ops": 500,
+            "wire_ops": 481,
+            "depth": 63
+          },
+          "submissions_count": 5,
+          "ideal_qaoa": {
+            "selected_index": 16384,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2146.259,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778,
+            "seconds": 5.162127921357751
+          },
+          "noisy_qaoa": {
+            "selected_index": 2304,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2932.901,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null,
+            "seconds": 934.2323163691908
+          }
+        },
+        "p3": {
+          "pruned_by_gate_ceiling": true,
+          "rxx_count": 570
+        }
+      }
+    }
+  ]
+}

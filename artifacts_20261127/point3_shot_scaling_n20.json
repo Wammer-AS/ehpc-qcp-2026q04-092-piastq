@@ -1,0 +1,4361 @@
+{
+  "meta": {
+    "timestamp_utc": "2026-11-27T19:34:07.851176+00:00",
+    "hostname": "redacted",
+    "python": "3.11.0",
+    "platform": "Linux-5.14.0-427.28.1.el9_4.x86_64-x86_64-with-glibc2.34",
+    "cpu_count": 128,
+    "slurm_job_id": "2119",
+    "slurm_nodelist": "redacted",
+    "packages": {
+      "qiskit": "2.4.1",
+      "qiskit-aqt-provider": "2.0.1",
+      "qiskit-aer": "0.18.4",
+      "aqt-connector": "0.7.0",
+      "ortools": "9.15.6755",
+      "z3-solver": "5.4.1.0",
+      "dwave-neal": "0.6.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "elapsed_seconds": 2242.288622846827,
+  "instances": [
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 0,
+      "seed": 20281750,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1780.76286515221,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 98340,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1565.015,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 640,
+            "selected_energy": -11,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1957.88,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4583333333333333
+          },
+          "uniform_random": {
+            "selected_index": 262528,
+            "selected_energy": 195,
+            "objective_gap": 219,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3334.405,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 98340,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1541.52,
+            "valid_fraction": 0.0075,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 640,
+            "selected_energy": -11,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1908.5425,
+            "valid_fraction": 0.0025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4583333333333333
+          },
+          "uniform_random": {
+            "selected_index": 262528,
+            "selected_energy": 195,
+            "objective_gap": 219,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3378.6475,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 98340,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1563.435,
+            "valid_fraction": 0.006666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 640,
+            "selected_energy": -11,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1856.5783333333334,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4583333333333333
+          },
+          "uniform_random": {
+            "selected_index": 1280,
+            "selected_energy": 95,
+            "objective_gap": 119,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3360.7883333333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 98340,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1512.006,
+            "valid_fraction": 0.009,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 266256,
+            "selected_energy": -20,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1860.007,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334
+          },
+          "uniform_random": {
+            "selected_index": 1280,
+            "selected_energy": 95,
+            "objective_gap": 119,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3388.078,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 98340,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1499.5166666666667,
+            "valid_fraction": 0.009166666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 266256,
+            "selected_energy": -20,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1859.8775,
+            "valid_fraction": 0.006666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334
+          },
+          "uniform_random": {
+            "selected_index": 1280,
+            "selected_energy": 95,
+            "objective_gap": 119,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3410.6075,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": -17,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1470.0963636363635,
+            "valid_fraction": 0.011363636363636364,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7083333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 266256,
+            "selected_energy": -20,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1823.3986363636363,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334
+          },
+          "uniform_random": {
+            "selected_index": 3073,
+            "selected_energy": 93,
+            "objective_gap": 117,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3421.7836363636366,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 82176,
+            "selected_energy": -20,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1477.5615,
+            "valid_fraction": 0.011,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334
+          },
+          "noisy_qaoa": {
+            "selected_index": 448,
+            "selected_energy": -20,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1799.32925,
+            "valid_fraction": 0.00425,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8333333333333334
+          },
+          "uniform_random": {
+            "selected_index": 3073,
+            "selected_energy": 93,
+            "objective_gap": 117,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3398.7635,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 1,
+      "seed": 20281751,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1766.3513072598726,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1008.515,
+            "valid_fraction": 0.06,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 160,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1423.78,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          },
+          "uniform_random": {
+            "selected_index": 75776,
+            "selected_energy": 180,
+            "objective_gap": 205,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3110.555,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1016.435,
+            "valid_fraction": 0.055,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 160,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1461.945,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          },
+          "uniform_random": {
+            "selected_index": 75776,
+            "selected_energy": 180,
+            "objective_gap": 205,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3187.5925,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1001.3983333333333,
+            "valid_fraction": 0.045,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 263168,
+            "selected_energy": -12,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1405.16,
+            "valid_fraction": 0.008333333333333333,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.48
+          },
+          "uniform_random": {
+            "selected_index": 75776,
+            "selected_energy": 180,
+            "objective_gap": 205,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3133.395,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 970.872,
+            "valid_fraction": 0.043,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 538624,
+            "selected_energy": -15,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1405.512,
+            "valid_fraction": 0.009,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6
+          },
+          "uniform_random": {
+            "selected_index": 75776,
+            "selected_energy": 180,
+            "objective_gap": 205,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3065.825,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 966.5183333333333,
+            "valid_fraction": 0.043333333333333335,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 538624,
+            "selected_energy": -15,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1405.4866666666667,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6
+          },
+          "uniform_random": {
+            "selected_index": 786689,
+            "selected_energy": 89,
+            "objective_gap": 114,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3079.3175,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 970.6009090909091,
+            "valid_fraction": 0.04181818181818182,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 560,
+            "selected_energy": -25,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1374.1204545454545,
+            "valid_fraction": 0.014545454545454545,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 786689,
+            "selected_energy": 89,
+            "objective_gap": 114,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3057.059090909091,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 48,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 954.542,
+            "valid_fraction": 0.047,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72
+          },
+          "noisy_qaoa": {
+            "selected_index": 560,
+            "selected_energy": -25,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1361.904,
+            "valid_fraction": 0.01375,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 534528,
+            "selected_energy": -12,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3051.50575,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.48
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 2,
+      "seed": 20281752,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1753.804054601118,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 524356,
+            "selected_energy": -16,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 782.085,
+            "valid_fraction": 0.065,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5925925925925926
+          },
+          "noisy_qaoa": {
+            "selected_index": 262240,
+            "selected_energy": -22,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1190.19,
+            "valid_fraction": 0.025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8148148148148148
+          },
+          "uniform_random": {
+            "selected_index": 10784,
+            "selected_energy": 451,
+            "objective_gap": 478,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2779.045,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 270368,
+            "selected_energy": -20,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 781.93,
+            "valid_fraction": 0.06,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7407407407407407
+          },
+          "noisy_qaoa": {
+            "selected_index": 262240,
+            "selected_energy": -22,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1170.03,
+            "valid_fraction": 0.0225,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8148148148148148
+          },
+          "uniform_random": {
+            "selected_index": 67600,
+            "selected_energy": 177,
+            "objective_gap": 204,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2901.2425,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 76,
+            "selected_energy": -21,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 771.07,
+            "valid_fraction": 0.06166666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 262240,
+            "selected_energy": -22,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1146.9866666666667,
+            "valid_fraction": 0.02,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8148148148148148
+          },
+          "uniform_random": {
+            "selected_index": 514,
+            "selected_energy": 89,
+            "objective_gap": 116,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2887.7566666666667,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 76,
+            "selected_energy": -21,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 770.882,
+            "valid_fraction": 0.056,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 262240,
+            "selected_energy": -22,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1170.986,
+            "valid_fraction": 0.018,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8148148148148148
+          },
+          "uniform_random": {
+            "selected_index": 514,
+            "selected_energy": 89,
+            "objective_gap": 116,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2883.642,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 524364,
+            "selected_energy": -24,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 780.3866666666667,
+            "valid_fraction": 0.05,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 262240,
+            "selected_energy": -22,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1177.5241666666666,
+            "valid_fraction": 0.0175,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8148148148148148
+          },
+          "uniform_random": {
+            "selected_index": 514,
+            "selected_energy": 89,
+            "objective_gap": 116,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2873.275,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 524364,
+            "selected_energy": -24,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 786.3354545454546,
+            "valid_fraction": 0.055,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 262244,
+            "selected_energy": -27,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1150.6131818181818,
+            "valid_fraction": 0.02090909090909091,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 514,
+            "selected_energy": 89,
+            "objective_gap": 116,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2906.74,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 270372,
+            "selected_energy": -25,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 791.209,
+            "valid_fraction": 0.059,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.9259259259259259
+          },
+          "noisy_qaoa": {
+            "selected_index": 262244,
+            "selected_energy": -27,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1138.4315,
+            "valid_fraction": 0.02075,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 514,
+            "selected_energy": 89,
+            "objective_gap": 116,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2899.301,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 3,
+      "seed": 20281753,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1745.0192628987134,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 66560,
+            "selected_energy": -2,
+            "objective_gap": 23,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1315.58,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.08
+          },
+          "noisy_qaoa": {
+            "selected_index": 4232,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1643.045,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 206852,
+            "selected_energy": 501,
+            "objective_gap": 526,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2584.34,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 1152,
+            "selected_energy": -6,
+            "objective_gap": 19,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1354.025,
+            "valid_fraction": 0.0075,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.24
+          },
+          "noisy_qaoa": {
+            "selected_index": 4232,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1591.8425,
+            "valid_fraction": 0.0025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 49186,
+            "selected_energy": 318,
+            "objective_gap": 343,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2621.8775,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 4102,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1317.4116666666666,
+            "valid_fraction": 0.008333333333333333,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 4232,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1550.0866666666666,
+            "valid_fraction": 0.0033333333333333335,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 18442,
+            "selected_energy": 316,
+            "objective_gap": 341,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2587.0033333333336,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 4102,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1328.241,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 147460,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1554.116,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72
+          },
+          "uniform_random": {
+            "selected_index": 65712,
+            "selected_energy": 240,
+            "objective_gap": 265,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2642.755,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 4102,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1330.7208333333333,
+            "valid_fraction": 0.006666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 4234,
+            "selected_energy": -25,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1556.9241666666667,
+            "valid_fraction": 0.005833333333333334,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 65712,
+            "selected_energy": 240,
+            "objective_gap": 265,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2629.6658333333335,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 4102,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1307.1931818181818,
+            "valid_fraction": 0.006818181818181818,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 4234,
+            "selected_energy": -25,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1553.1981818181819,
+            "valid_fraction": 0.004090909090909091,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 851968,
+            "selected_energy": 169,
+            "objective_gap": 194,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2625.6213636363636,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 10,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1314.7715,
+            "valid_fraction": 0.00775,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "noisy_qaoa": {
+            "selected_index": 4234,
+            "selected_energy": -25,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1527.3505,
+            "valid_fraction": 0.00325,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 328740,
+            "selected_energy": 157,
+            "objective_gap": 182,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2616.91675,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 4,
+      "seed": 20281754,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1756.6507909465581,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -4,
+            "objective_gap": 21,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1381.865,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.16
+          },
+          "noisy_qaoa": {
+            "selected_index": 274944,
+            "selected_energy": 75,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 1860.625,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 262198,
+            "selected_energy": 459,
+            "objective_gap": 484,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2908.995,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": -14,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1402.9625,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.56
+          },
+          "noisy_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -6,
+            "objective_gap": 19,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1858.0975,
+            "valid_fraction": 0.0025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.24
+          },
+          "uniform_random": {
+            "selected_index": 65683,
+            "selected_energy": 262,
+            "objective_gap": 287,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2919.31,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": -14,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1480.9016666666666,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.56
+          },
+          "noisy_qaoa": {
+            "selected_index": 1,
+            "selected_energy": -6,
+            "objective_gap": 19,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1819.7133333333334,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.24
+          },
+          "uniform_random": {
+            "selected_index": 73856,
+            "selected_energy": 78,
+            "objective_gap": 103,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2923.3083333333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": -14,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1524.763,
+            "valid_fraction": 0.009,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.56
+          },
+          "noisy_qaoa": {
+            "selected_index": 16388,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1814.829,
+            "valid_fraction": 0.004,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          },
+          "uniform_random": {
+            "selected_index": 73856,
+            "selected_energy": 78,
+            "objective_gap": 103,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2865.902,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": -14,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1540.2683333333334,
+            "valid_fraction": 0.010833333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.56
+          },
+          "noisy_qaoa": {
+            "selected_index": 136192,
+            "selected_energy": -20,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1807.9616666666666,
+            "valid_fraction": 0.004166666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8
+          },
+          "uniform_random": {
+            "selected_index": 73856,
+            "selected_energy": 78,
+            "objective_gap": 103,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2877.94,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 270336,
+            "selected_energy": -16,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1523.4609090909091,
+            "valid_fraction": 0.009545454545454546,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.64
+          },
+          "noisy_qaoa": {
+            "selected_index": 136192,
+            "selected_energy": -20,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1794.445909090909,
+            "valid_fraction": 0.003181818181818182,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8
+          },
+          "uniform_random": {
+            "selected_index": 73856,
+            "selected_energy": 78,
+            "objective_gap": 103,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2919.108181818182,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 136192,
+            "selected_energy": -20,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1527.10275,
+            "valid_fraction": 0.01025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8
+          },
+          "noisy_qaoa": {
+            "selected_index": 136192,
+            "selected_energy": -20,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1766.56825,
+            "valid_fraction": 0.00325,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8
+          },
+          "uniform_random": {
+            "selected_index": 65664,
+            "selected_energy": -11,
+            "objective_gap": 14,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2909.165,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.44
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 5,
+      "seed": 20281755,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1750.7417991813272,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 2128,
+            "selected_energy": -15,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1329.42,
+            "valid_fraction": 0.065,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1813.24,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 266656,
+            "selected_energy": 519,
+            "objective_gap": 544,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3542.29,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 2128,
+            "selected_energy": -15,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1318.3275,
+            "valid_fraction": 0.045,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1834.6925,
+            "valid_fraction": 0.0075,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 266656,
+            "selected_energy": 519,
+            "objective_gap": 544,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3394.4125,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 576,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1334.77,
+            "valid_fraction": 0.04666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1814.895,
+            "valid_fraction": 0.013333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 32816,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3388.0616666666665,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 576,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1352.189,
+            "valid_fraction": 0.043,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1806.298,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 32816,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3358.411,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 576,
+            "selected_energy": -18,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1356.8941666666667,
+            "valid_fraction": 0.04583333333333333,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.72
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1790.5675,
+            "valid_fraction": 0.0175,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 32816,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3369.7166666666667,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 8452,
+            "selected_energy": -19,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1368.9845454545455,
+            "valid_fraction": 0.045,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.76
+          },
+          "noisy_qaoa": {
+            "selected_index": 1088,
+            "selected_energy": -17,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1761.8145454545454,
+            "valid_fraction": 0.017727272727272727,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.68
+          },
+          "uniform_random": {
+            "selected_index": 32816,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3364.025,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 1104,
+            "selected_energy": -20,
+            "objective_gap": 5,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1385.143,
+            "valid_fraction": 0.04325,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8
+          },
+          "noisy_qaoa": {
+            "selected_index": 2116,
+            "selected_energy": -19,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1738.43825,
+            "valid_fraction": 0.01525,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.76
+          },
+          "uniform_random": {
+            "selected_index": 32816,
+            "selected_energy": -10,
+            "objective_gap": 15,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3356.9825,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.4
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 6,
+      "seed": 20281756,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1773.6757991742343,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 528,
+            "selected_energy": -15,
+            "objective_gap": 13,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 685.3,
+            "valid_fraction": 0.075,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5357142857142857
+          },
+          "noisy_qaoa": {
+            "selected_index": 33280,
+            "selected_energy": -16,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1128.305,
+            "valid_fraction": 0.02,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5714285714285714
+          },
+          "uniform_random": {
+            "selected_index": 529930,
+            "selected_energy": 581,
+            "objective_gap": 609,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3124.465,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 135184,
+            "selected_energy": -16,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 677.6525,
+            "valid_fraction": 0.0775,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5714285714285714
+          },
+          "noisy_qaoa": {
+            "selected_index": 33280,
+            "selected_energy": -16,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1189.3625,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5714285714285714
+          },
+          "uniform_random": {
+            "selected_index": 529930,
+            "selected_energy": 581,
+            "objective_gap": 609,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3152.495,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 521,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 693.3866666666667,
+            "valid_fraction": 0.065,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "noisy_qaoa": {
+            "selected_index": 33280,
+            "selected_energy": -16,
+            "objective_gap": 12,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1172.62,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5714285714285714
+          },
+          "uniform_random": {
+            "selected_index": 264209,
+            "selected_energy": 482,
+            "objective_gap": 510,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3182.715,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 1042,
+            "selected_energy": -20,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 704.854,
+            "valid_fraction": 0.062,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7142857142857143
+          },
+          "noisy_qaoa": {
+            "selected_index": 769,
+            "selected_energy": -17,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1190.046,
+            "valid_fraction": 0.018,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6071428571428571
+          },
+          "uniform_random": {
+            "selected_index": 405504,
+            "selected_energy": 184,
+            "objective_gap": 212,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3141.19,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 1042,
+            "selected_energy": -20,
+            "objective_gap": 8,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 701.2333333333333,
+            "valid_fraction": 0.065,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7142857142857143
+          },
+          "noisy_qaoa": {
+            "selected_index": 33289,
+            "selected_energy": -28,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1199.1991666666668,
+            "valid_fraction": 0.018333333333333333,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 405504,
+            "selected_energy": 184,
+            "objective_gap": 212,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3173.7725,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 5136,
+            "selected_energy": -21,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 704.1636363636363,
+            "valid_fraction": 0.07136363636363637,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.75
+          },
+          "noisy_qaoa": {
+            "selected_index": 33289,
+            "selected_energy": -28,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1165.6663636363637,
+            "valid_fraction": 0.017727272727272727,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 2052,
+            "selected_energy": 92,
+            "objective_gap": 120,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3147.1695454545456,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 33281,
+            "selected_energy": -24,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 715.11775,
+            "valid_fraction": 0.06425,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8571428571428571
+          },
+          "noisy_qaoa": {
+            "selected_index": 33289,
+            "selected_energy": -28,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1146.7005,
+            "valid_fraction": 0.0175,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 4370,
+            "selected_energy": 79,
+            "objective_gap": 107,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3123.6415,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 2,
+      "instance": 7,
+      "seed": 20281757,
+      "rxx_count": 248,
+      "wire_ops": 349,
+      "total_noisy_4000_seconds": 1800.8715994041413,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 24,
+            "selected_energy": -17,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1129.38,
+            "valid_fraction": 0.02,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6071428571428571
+          },
+          "noisy_qaoa": {
+            "selected_index": 640,
+            "selected_energy": -12,
+            "objective_gap": 16,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1728.155,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.42857142857142855
+          },
+          "uniform_random": {
+            "selected_index": 655648,
+            "selected_energy": 343,
+            "objective_gap": 371,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3789.655,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 24,
+            "selected_energy": -17,
+            "objective_gap": 11,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1133.8625,
+            "valid_fraction": 0.025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6071428571428571
+          },
+          "noisy_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1736.3225,
+            "valid_fraction": 0.0125,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "uniform_random": {
+            "selected_index": 655648,
+            "selected_energy": 343,
+            "objective_gap": 371,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3769.1475,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 65794,
+            "selected_energy": -18,
+            "objective_gap": 10,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1138.6333333333334,
+            "valid_fraction": 0.023333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6428571428571429
+          },
+          "noisy_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1713.3333333333333,
+            "valid_fraction": 0.011666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "uniform_random": {
+            "selected_index": 34562,
+            "selected_energy": 93,
+            "objective_gap": 121,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3757.6266666666666,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1147.22,
+            "valid_fraction": 0.024,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "noisy_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1709.486,
+            "valid_fraction": 0.013,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "uniform_random": {
+            "selected_index": 34562,
+            "selected_energy": 93,
+            "objective_gap": 121,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3730.023,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1154.9941666666666,
+            "valid_fraction": 0.023333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "noisy_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1714.355,
+            "valid_fraction": 0.011666666666666667,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "uniform_random": {
+            "selected_index": 34562,
+            "selected_energy": 93,
+            "objective_gap": 121,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3720.866666666667,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 33408,
+            "selected_energy": -21,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1143.655909090909,
+            "valid_fraction": 0.02409090909090909,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.75
+          },
+          "noisy_qaoa": {
+            "selected_index": 33026,
+            "selected_energy": -19,
+            "objective_gap": 9,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1690.1631818181818,
+            "valid_fraction": 0.009545454545454546,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6785714285714286
+          },
+          "uniform_random": {
+            "selected_index": 34562,
+            "selected_energy": 93,
+            "objective_gap": 121,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3770.35,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 197888,
+            "selected_energy": -28,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1133.33625,
+            "valid_fraction": 0.02575,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 34048,
+            "selected_energy": -22,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1681.0885,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7857142857142857
+          },
+          "uniform_random": {
+            "selected_index": 34562,
+            "selected_energy": 93,
+            "objective_gap": 121,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3737.632,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 0,
+      "seed": 20282100,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2201.8553080614656,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1848.99,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 68,
+            "objective_gap": 76,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2302.14,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 18444,
+            "selected_energy": 467,
+            "objective_gap": 475,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3706.845,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1818.8975,
+            "valid_fraction": 0.0025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 68,
+            "objective_gap": 76,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2399.7825,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 18444,
+            "selected_energy": 467,
+            "objective_gap": 475,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3670.2475,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1849.3,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 68,
+            "objective_gap": 76,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2360.2316666666666,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 266304,
+            "selected_energy": 228,
+            "objective_gap": 236,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3618.2533333333336,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1849.786,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 68,
+            "objective_gap": 76,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2437.484,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 266304,
+            "selected_energy": 228,
+            "objective_gap": 236,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3630.123,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1854.6916666666666,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 68,
+            "objective_gap": 76,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2433.505,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 266304,
+            "selected_energy": 228,
+            "objective_gap": 236,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3643.4875,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -4,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1856.75,
+            "valid_fraction": 0.0009090909090909091,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -1,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2405.014090909091,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.125
+          },
+          "uniform_random": {
+            "selected_index": 69634,
+            "selected_energy": 227,
+            "objective_gap": 235,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3698.857727272727,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 2,
+            "selected_energy": -7,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1871.09125,
+            "valid_fraction": 0.00225,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.875
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -1,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2378.8785,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.125
+          },
+          "uniform_random": {
+            "selected_index": 16386,
+            "selected_energy": 66,
+            "objective_gap": 74,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3758.5215,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 1,
+      "seed": 20282101,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2201.080673035234,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2034.505,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 82,
+            "objective_gap": 91,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2743.45,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 525378,
+            "selected_energy": 573,
+            "objective_gap": 582,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4364.13,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2017.59,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 82,
+            "objective_gap": 91,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2805.4275,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 525378,
+            "selected_energy": 573,
+            "objective_gap": 582,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4671.24,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 1978.5766666666666,
+            "valid_fraction": 0.008333333333333333,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 82,
+            "objective_gap": 91,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2749.2233333333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 65592,
+            "selected_energy": 563,
+            "objective_gap": 572,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4690.035,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2019.327,
+            "valid_fraction": 0.006,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 82,
+            "objective_gap": 91,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2832.106,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 48,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4616.985,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2027.2091666666668,
+            "valid_fraction": 0.005833333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2829.0783333333334,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "uniform_random": {
+            "selected_index": 48,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4586.010833333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2079.5468181818183,
+            "valid_fraction": 0.005454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2781.9645454545453,
+            "valid_fraction": 0.0009090909090909091,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 48,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4592.1336363636365,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -8,
+            "objective_gap": 1,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2056.05475,
+            "valid_fraction": 0.007,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.8888888888888888
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2754.62875,
+            "valid_fraction": 0.00075,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 48,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4590.57625,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 2,
+      "seed": 20282102,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2213.4930242560804,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1586.335,
+            "valid_fraction": 0.025,
+            "optimum_fraction": 0.005,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 81,
+            "objective_gap": 90,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2191.395,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 41217,
+            "selected_energy": 523,
+            "objective_gap": 532,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4135.96,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1486.5025,
+            "valid_fraction": 0.0225,
+            "optimum_fraction": 0.0025,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 520,
+            "selected_energy": 81,
+            "objective_gap": 90,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2220.6125,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 294936,
+            "selected_energy": 519,
+            "objective_gap": 528,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4153.8175,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1530.5883333333334,
+            "valid_fraction": 0.015,
+            "optimum_fraction": 0.0016666666666666668,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 260,
+            "selected_energy": 75,
+            "objective_gap": 84,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2182.258333333333,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 294936,
+            "selected_energy": 519,
+            "objective_gap": 528,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4096.295,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1543.556,
+            "valid_fraction": 0.013,
+            "optimum_fraction": 0.001,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 260,
+            "selected_energy": 75,
+            "objective_gap": 84,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2248.293,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 162,
+            "selected_energy": 261,
+            "objective_gap": 270,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4210.744,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1541.4833333333333,
+            "valid_fraction": 0.011666666666666667,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2231.994166666667,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 25,
+            "selected_energy": 249,
+            "objective_gap": 258,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4240.505833333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1522.4777272727272,
+            "valid_fraction": 0.011818181818181818,
+            "optimum_fraction": 0.0009090909090909091,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2195.0513636363635,
+            "valid_fraction": 0.0009090909090909091,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 25,
+            "selected_energy": 249,
+            "objective_gap": 258,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4258.74,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 256,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 1500.848,
+            "valid_fraction": 0.01225,
+            "optimum_fraction": 0.00125,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2178.503,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 131074,
+            "selected_energy": 81,
+            "objective_gap": 90,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4256.1855,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 3,
+      "seed": 20282103,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2200.370105240494,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 40,
+            "selected_energy": 77,
+            "objective_gap": 86,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2334.73,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 80,
+            "objective_gap": 89,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2782.01,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4484.2,
+            "valid_fraction": 0.005,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 40,
+            "selected_energy": 77,
+            "objective_gap": 86,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2238.8075,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 80,
+            "objective_gap": 89,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2897.69,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4338.54,
+            "valid_fraction": 0.0025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 40,
+            "selected_energy": 77,
+            "objective_gap": 86,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2299.8533333333335,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 80,
+            "objective_gap": 89,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2847.91,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4338.4783333333335,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 40,
+            "selected_energy": 77,
+            "objective_gap": 86,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2295.234,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 80,
+            "objective_gap": 89,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2928.254,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4303.405,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2259.048333333333,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 80,
+            "objective_gap": 89,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2918.8591666666666,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4284.254166666667,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2259.257727272727,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2881.6877272727274,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.00045454545454545455,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4256.472272727273,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2273.91325,
+            "valid_fraction": 0.00175,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2866.17825,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.00025,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 128,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 4298.96025,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 4,
+      "seed": 20282104,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2196.62276494503,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 262144,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2096.615,
+            "valid_fraction": 0.01,
+            "optimum_fraction": 0.005,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 8193,
+            "selected_energy": 104,
+            "objective_gap": 113,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2929.98,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 565272,
+            "selected_energy": 1113,
+            "objective_gap": 1122,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5327.935,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 8192,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2163.405,
+            "valid_fraction": 0.0175,
+            "optimum_fraction": 0.0075,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 520,
+            "selected_energy": 99,
+            "objective_gap": 108,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3047.5675,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 295296,
+            "selected_energy": 663,
+            "objective_gap": 672,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5538.605,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 8192,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2068.4383333333335,
+            "valid_fraction": 0.018333333333333333,
+            "optimum_fraction": 0.008333333333333333,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -6,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2983.6866666666665,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666
+          },
+          "uniform_random": {
+            "selected_index": 295296,
+            "selected_energy": 663,
+            "objective_gap": 672,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5475.965,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2153.592,
+            "valid_fraction": 0.017,
+            "optimum_fraction": 0.008,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 1024,
+            "selected_energy": -6,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 3079.531,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666
+          },
+          "uniform_random": {
+            "selected_index": 557120,
+            "selected_energy": 331,
+            "objective_gap": 340,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5409.561,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2164.016666666667,
+            "valid_fraction": 0.0175,
+            "optimum_fraction": 0.01,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 4096,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 3067.9691666666668,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0008333333333333334,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 557120,
+            "selected_energy": 331,
+            "objective_gap": 340,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5419.449166666666,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2116.4345454545455,
+            "valid_fraction": 0.018636363636363635,
+            "optimum_fraction": 0.008181818181818182,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 3003.1781818181817,
+            "valid_fraction": 0.0027272727272727275,
+            "optimum_fraction": 0.0018181818181818182,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 262176,
+            "selected_energy": 104,
+            "objective_gap": 113,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5377.358181818182,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2106.9215,
+            "valid_fraction": 0.021,
+            "optimum_fraction": 0.00625,
+            "feasible_weight_ratio": 1.0
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -9,
+            "objective_gap": 0,
+            "selected_optimal": true,
+            "selected_valid": true,
+            "mean_sample_energy": 2980.627,
+            "valid_fraction": 0.00275,
+            "optimum_fraction": 0.00125,
+            "feasible_weight_ratio": 1.0
+          },
+          "uniform_random": {
+            "selected_index": 262176,
+            "selected_energy": 104,
+            "objective_gap": 113,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 5400.7635,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 5,
+      "seed": 20282105,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2201.695636836812,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 266,
+            "selected_energy": 289,
+            "objective_gap": 298,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2410.145,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3004.175,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4665.085,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 266,
+            "selected_energy": 289,
+            "objective_gap": 298,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2437.02,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3122.3375,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4725.985,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2427.395,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3081.9016666666666,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4806.635,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2433.653,
+            "valid_fraction": 0.001,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3154.139,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4880.27,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2421.09,
+            "valid_fraction": 0.0008333333333333334,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3146.9783333333335,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4866.423333333333,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2388.469090909091,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3114.6118181818183,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4871.813636363637,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 4,
+            "selected_energy": -3,
+            "objective_gap": 6,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2396.54975,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.3333333333333333
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3093.1455,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 2112,
+            "selected_energy": 89,
+            "objective_gap": 98,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4858.79,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 6,
+      "seed": 20282106,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2199.5086045637727,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 65576,
+            "selected_energy": 283,
+            "objective_gap": 292,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2348.735,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 92,
+            "objective_gap": 101,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2887.4,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 4180,
+            "selected_energy": 580,
+            "objective_gap": 589,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4434.4,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 8224,
+            "selected_energy": 88,
+            "objective_gap": 97,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2260.2825,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 2056,
+            "selected_energy": 92,
+            "objective_gap": 101,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2984.18,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 4180,
+            "selected_energy": 580,
+            "objective_gap": 589,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4506.9825,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 65792,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2292.903333333333,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 65538,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2949.0,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 4180,
+            "selected_energy": 580,
+            "objective_gap": 589,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4631.481666666667,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2276.823,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          },
+          "noisy_qaoa": {
+            "selected_index": 65540,
+            "selected_energy": 84,
+            "objective_gap": 93,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3017.753,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 114688,
+            "selected_energy": 287,
+            "objective_gap": 296,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4634.159,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2277.7033333333334,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          },
+          "noisy_qaoa": {
+            "selected_index": 65540,
+            "selected_energy": 84,
+            "objective_gap": 93,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3013.8216666666667,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 114688,
+            "selected_energy": 287,
+            "objective_gap": 296,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4638.9725,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 2048,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2263.7054545454544,
+            "valid_fraction": 0.0009090909090909091,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          },
+          "noisy_qaoa": {
+            "selected_index": 65540,
+            "selected_energy": 84,
+            "objective_gap": 93,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2966.194090909091,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 102400,
+            "selected_energy": 280,
+            "objective_gap": 289,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4681.932727272727,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 8192,
+            "selected_energy": -6,
+            "objective_gap": 3,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2250.1985,
+            "valid_fraction": 0.00125,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.6666666666666666
+          },
+          "noisy_qaoa": {
+            "selected_index": 65540,
+            "selected_energy": 84,
+            "objective_gap": 93,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2939.3685,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 102400,
+            "selected_energy": 280,
+            "objective_gap": 289,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4639.56675,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "instance": 7,
+      "seed": 20282107,
+      "rxx_count": 380,
+      "wire_ops": 481,
+      "total_noisy_4000_seconds": 2203.287946254015,
+      "by_shots": {
+        "200": {
+          "shots": 200,
+          "submissions": 1,
+          "ideal_qaoa": {
+            "selected_index": 65600,
+            "selected_energy": 91,
+            "objective_gap": 100,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2243.07,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2896.07,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 24710,
+            "selected_energy": 969,
+            "objective_gap": 978,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4749.71,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "400": {
+          "shots": 400,
+          "submissions": 2,
+          "ideal_qaoa": {
+            "selected_index": 32832,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2279.5275,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2992.5725,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 296064,
+            "selected_energy": 575,
+            "objective_gap": 584,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4738.385,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "600": {
+          "shots": 600,
+          "submissions": 3,
+          "ideal_qaoa": {
+            "selected_index": 512,
+            "selected_energy": -5,
+            "objective_gap": 4,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2272.2066666666665,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.5555555555555556
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 2944.556666666667,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 296064,
+            "selected_energy": 575,
+            "objective_gap": 584,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4707.123333333333,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1000": {
+          "shots": 1000,
+          "submissions": 5,
+          "ideal_qaoa": {
+            "selected_index": 524288,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2254.868,
+            "valid_fraction": 0.002,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 32769,
+            "selected_energy": 87,
+            "objective_gap": 96,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3018.803,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 296064,
+            "selected_energy": 575,
+            "objective_gap": 584,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4735.193,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "1200": {
+          "shots": 1200,
+          "submissions": 6,
+          "ideal_qaoa": {
+            "selected_index": 524288,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2249.8391666666666,
+            "valid_fraction": 0.0016666666666666668,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 132,
+            "selected_energy": 86,
+            "objective_gap": 95,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 3018.3133333333335,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          },
+          "uniform_random": {
+            "selected_index": 296064,
+            "selected_energy": 575,
+            "objective_gap": 584,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4748.028333333334,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "2200": {
+          "shots": 2200,
+          "submissions": 11,
+          "ideal_qaoa": {
+            "selected_index": 524288,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2200.4731818181817,
+            "valid_fraction": 0.0009090909090909091,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -2,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2971.5504545454546,
+            "valid_fraction": 0.00045454545454545455,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.2222222222222222
+          },
+          "uniform_random": {
+            "selected_index": 524360,
+            "selected_energy": 284,
+            "objective_gap": 293,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4729.442272727273,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        },
+        "4000": {
+          "shots": 4000,
+          "submissions": 20,
+          "ideal_qaoa": {
+            "selected_index": 16384,
+            "selected_energy": -7,
+            "objective_gap": 2,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2209.4695,
+            "valid_fraction": 0.00175,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.7777777777777778
+          },
+          "noisy_qaoa": {
+            "selected_index": 8,
+            "selected_energy": -2,
+            "objective_gap": 7,
+            "selected_optimal": false,
+            "selected_valid": true,
+            "mean_sample_energy": 2950.66725,
+            "valid_fraction": 0.00025,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": 0.2222222222222222
+          },
+          "uniform_random": {
+            "selected_index": 544,
+            "selected_energy": 93,
+            "objective_gap": 102,
+            "selected_optimal": false,
+            "selected_valid": false,
+            "mean_sample_energy": 4710.5195,
+            "valid_fraction": 0.0,
+            "optimum_fraction": 0.0,
+            "feasible_weight_ratio": null
+          }
+        }
+      }
+    }
+  ]
+}

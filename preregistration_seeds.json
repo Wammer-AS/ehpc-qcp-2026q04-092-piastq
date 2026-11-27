@@ -1,0 +1,41 @@
+{
+  "proposal_id": "EHPC-QCP-2026Q04-092",
+  "partition": "Piast-Q - 20Qubit Ion-Trap",
+  "package_version": "0.2.0",
+  "frozen_date": "2026-11-27",
+  "qiskit_version_pin": "2.4.1",
+  "qiskit_aqt_provider_version_pin": "2.0.1",
+  "hardware_constraints": {
+    "native_gates": ["rz", "r", "rxx"],
+    "terminal_full_register_measure": true,
+    "forbid_mid_circuit_measure": true,
+    "forbid_reset_delay_feedforward": true,
+    "max_shots_per_submission": 200,
+    "max_circuits_per_submission": 1,
+    "max_operations_per_circuit": 2000,
+    "max_rxx_ceiling": 400,
+    "min_seconds_per_200_shot_submission": 18.5
+  },
+  "seeds": {
+    "base_seed_gate_map": 20261127,
+    "base_seed_dev": 20261100,
+    "base_seed_heldout": 20270000,
+    "seed_formula_2body": "base_seed + n * 1000 + round(density * 100) * 10 + instance",
+    "seed_formula_3body": "base_seed + 500000 + n * 1000 + num_triples * 10 + instance",
+    "d1_dev_3body_seeds": [20781220, 20781221, 20781222, 20781223, 20781224, 20781225, 20781226, 20781227],
+    "d1_heldout_3body_seeds": [20790120, 20790121, 20790122, 20790123, 20790124, 20790125],
+    "bootstrap_seed": 20261127,
+    "bootstrap_resamples": 10000
+  },
+  "cross_platform_shot_comparison": {
+    "dev_shots_piastq": 1000,
+    "dev_submissions_piastq": 5,
+    "dev_shots_euro_q_exa": 1024,
+    "mid_shots_piastq": 2200,
+    "mid_submissions_piastq": 11,
+    "mid_shots_vlq": 2250,
+    "final_shots_piastq": 4000,
+    "final_submissions_piastq": 20,
+    "final_shots_superconducting": 4096
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "timestamp_utc": "2026-11-27T18:59:02.596777+00:00",
+    "hostname": "redacted",
+    "python": "3.11.0",
+    "platform": "Linux-5.14.0-427.28.1.el9_4.x86_64-x86_64-with-glibc2.34",
+    "cpu_count": 128,
+    "slurm_job_id": "2116",
+    "slurm_nodelist": "redacted",
+    "packages": {
+      "qiskit": "2.4.1",
+      "qiskit-aqt-provider": "2.0.1",
+      "qiskit-aer": "0.18.4",
+      "aqt-connector": "0.7.0",
+      "ortools": "9.15.6755",
+      "z3-solver": "5.4.1.0",
+      "dwave-neal": "0.6.0",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1"
+    }
+  },
+  "elapsed_seconds": 138.03187258541584,
+  "constraints_verified": {
+    "native_gates_only": [
+      "rz",
+      "r",
+      "rxx"
+    ],
+    "single_terminal_full_register_measure": true,
+    "max_shots_per_submission": 200,
+    "max_ops_per_circuit": 2000,
+    "max_rxx_ceiling": 400,
+    "single_circuit_per_submission": true,
+    "violations_observed": 0
+  },
+  "qasm_bridge_verification": {
+    "validation": {
+      "valid": true,
+      "num_qubits": 6,
+      "shots": 200,
+      "rxx_count": 3,
+      "r_count": 12,
+      "rz_count": 12,
+      "measure_count": 6,
+      "qiskit_total_ops": 33,
+      "wire_ops": 28,
+      "depth": 6
+    },
+    "returned_shots": 200
+  },
+  "batched_hybrid_runs": [
+    {
+      "n": 8,
+      "density": 0.5,
+      "depth_p": 2,
+      "circuit_stats": {
+        "valid": true,
+        "num_qubits": 8,
+        "shots": 200,
+        "rxx_count": 28,
+        "r_count": 16,
+        "rz_count": 24,
+        "measure_count": 8,
+        "qiskit_total_ops": 76,
+        "wire_ops": 69,
+        "depth": 22
+      },
+      "submissions_per_backend": 5,
+      "shot_chunks": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "ideal_metrics": {
+        "selected_index": 168,
+        "selected_energy": -21,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 13.791,
+        "valid_fraction": 0.557,
+        "optimum_fraction": 0.02,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_metrics": {
+        "selected_index": 168,
+        "selected_energy": -21,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 21.724,
+        "valid_fraction": 0.49,
+        "optimum_fraction": 0.024,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_seconds": 0.0219709649682045
+    },
+    {
+      "n": 12,
+      "density": 0.65,
+      "depth_p": 2,
+      "circuit_stats": {
+        "valid": true,
+        "num_qubits": 12,
+        "shots": 200,
+        "rxx_count": 86,
+        "r_count": 24,
+        "rz_count": 36,
+        "measure_count": 12,
+        "qiskit_total_ops": 158,
+        "wire_ops": 147,
+        "depth": 36
+      },
+      "submissions_per_backend": 5,
+      "shot_chunks": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "ideal_metrics": {
+        "selected_index": 1057,
+        "selected_energy": -22,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 218.547,
+        "valid_fraction": 0.19,
+        "optimum_fraction": 0.001,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_metrics": {
+        "selected_index": 100,
+        "selected_energy": -17,
+        "objective_gap": 5,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 269.232,
+        "valid_fraction": 0.139,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.7727272727272727
+      },
+      "noisy_seconds": 0.10974602401256561
+    },
+    {
+      "n": 16,
+      "density": 0.65,
+      "depth_p": 3,
+      "circuit_stats": {
+        "valid": true,
+        "num_qubits": 16,
+        "shots": 200,
+        "rxx_count": 234,
+        "r_count": 48,
+        "rz_count": 64,
+        "measure_count": 16,
+        "qiskit_total_ops": 362,
+        "wire_ops": 347,
+        "depth": 61
+      },
+      "submissions_per_backend": 5,
+      "shot_chunks": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "ideal_metrics": {
+        "selected_index": 34856,
+        "selected_energy": -26,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 343.141,
+        "valid_fraction": 0.142,
+        "optimum_fraction": 0.004,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_metrics": {
+        "selected_index": 41,
+        "selected_energy": -26,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 609.789,
+        "valid_fraction": 0.055,
+        "optimum_fraction": 0.001,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_seconds": 2.1947578489780426
+    },
+    {
+      "n": 20,
+      "density": 0.65,
+      "depth_p": 3,
+      "circuit_stats": {
+        "valid": true,
+        "num_qubits": 20,
+        "shots": 200,
+        "rxx_count": 372,
+        "r_count": 60,
+        "rz_count": 80,
+        "measure_count": 20,
+        "qiskit_total_ops": 532,
+        "wire_ops": 513,
+        "depth": 76
+      },
+      "submissions_per_backend": 5,
+      "shot_chunks": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "ideal_metrics": {
+        "selected_index": 20512,
+        "selected_energy": -23,
+        "objective_gap": 4,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 324.247,
+        "valid_fraction": 0.197,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.8518518518518519
+      },
+      "noisy_metrics": {
+        "selected_index": 524292,
+        "selected_energy": -18,
+        "objective_gap": 9,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 1160.671,
+        "valid_fraction": 0.027,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.6666666666666666
+      },
+      "noisy_seconds": 54.94053640589118
+    },
+    {
+      "n": 20,
+      "density": 1.0,
+      "depth_p": 2,
+      "circuit_stats": {
+        "valid": true,
+        "num_qubits": 20,
+        "shots": 200,
+        "rxx_count": 380,
+        "r_count": 40,
+        "rz_count": 60,
+        "measure_count": 20,
+        "qiskit_total_ops": 500,
+        "wire_ops": 481,
+        "depth": 63
+      },
+      "submissions_per_backend": 5,
+      "shot_chunks": [
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "ideal_metrics": {
+        "selected_index": 4,
+        "selected_energy": -9,
+        "objective_gap": 0,
+        "selected_optimal": true,
+        "selected_valid": true,
+        "mean_sample_energy": 2104.487,
+        "valid_fraction": 0.006,
+        "optimum_fraction": 0.001,
+        "feasible_weight_ratio": 1.0
+      },
+      "noisy_metrics": {
+        "selected_index": 8,
+        "selected_energy": -4,
+        "objective_gap": 5,
+        "selected_optimal": false,
+        "selected_valid": true,
+        "mean_sample_energy": 2981.931,
+        "valid_fraction": 0.001,
+        "optimum_fraction": 0.0,
+        "feasible_weight_ratio": 0.4444444444444444
+      },
+      "noisy_seconds": 54.313676588237286
+    }
+  ]
+}

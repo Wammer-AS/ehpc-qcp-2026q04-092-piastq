@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piastq-bench"
+version = "0.2.0"
+description = "Emulator benchmark, native-gate compilation, and classical reference solvers for EuroHPC project EHPC-QCP-2026Q04-092 (PIAST-Q 20-qubit ion-trap partition)"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [
+  {name = "Vetle Wammer"}
+]
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.11",
+  "qiskit>=2.3,<=2.4.1",
+  "qiskit-aqt-provider>=2.0.0,<2.1.0",
+  "qiskit-aer>=0.17",
+  "aqt-connector>=0.4",
+  "ortools>=9.8",
+  "z3-solver>=4.12",
+  "dwave-neal>=0.6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
